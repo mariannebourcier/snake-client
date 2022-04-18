@@ -1,3 +1,4 @@
+const { CONNREFUSED } = require("dns");
 const net = require("net");
 
 // establishes a connection with the game server
@@ -9,6 +10,13 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log(data);
   });
+  conn.on('connect', () => {
+    console.log("Successfully connected to game server.");
+    conn.write("Name: MB");
+  });
+  // conn.on('connect', (data) => {
+  //   conn.write("Move: up", data);
+  // });
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
