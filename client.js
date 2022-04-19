@@ -1,4 +1,4 @@
-const { CONNREFUSED } = require("dns");
+// const { CONNREFUSED } = require("dns");
 const net = require("net");
 
 // establishes a connection with the game server
