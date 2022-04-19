@@ -30,6 +30,15 @@ const handleUserInput = function(key) {
   if (key === 'd') {
     connection.write('Move: right');
   }
+  if (key === 'm') {
+    connection.write('Say: I got the movez!');
+  }
+  if (key === 'j') {
+    connection.write('Say: Slithering Serpent!');
+  }
+  if (key === 'n') {
+    connection.write('Say: Where are the mice?');
+  }
 };
 
 
