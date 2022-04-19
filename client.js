@@ -1,5 +1,6 @@
 // const { CONNREFUSED } = require("dns");
 const net = require("net");
+const { IP, PORT } = require('./constants.js');
 
 // establishes a connection with the game server
 const connect = function() {
