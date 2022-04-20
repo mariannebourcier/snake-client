@@ -1,5 +1,6 @@
 let connection;
 
+//Setting up the connection with the client
 const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
@@ -12,9 +13,8 @@ const setupInput = (conn) => {
   });
   return stdin;
 };
-
+//Keyboard keys to press to play the game
 const handleUserInput = function(key) {
-  //stdin.on('data', (key) => {
   if (key === '\u0003') {
     process.exit();
   }
