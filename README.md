@@ -15,5 +15,5 @@ Before you can run this client, you will need to be running the server side whic
 
 - Follow steps inside the snek server repo to run the server side
 - Run the development snake client using the `node play.js` command.
-- Start controlling the snake to collect the red dots by pressing the W, A, S or D keys.
+- Start controlling the snake to collect the red dots by pressing the W(up), A(left), S(down) or D(right) keys.
 - Press the J, N or M keys to send quirky messages to the other players.
